@@ -1,0 +1,34 @@
+{
+    "tables": [
+        {
+            "tableName": "fii",
+            "fields": ["id", "symbol", "name", "administrator"],
+            "binds": ["id", "symbol", "name", "administrator"]
+        }, 
+        {
+            "tableName": "indicators",
+            "fields": ["id", "fii_id", "daily_liquidity", "last_yield", "dividend_yield", "net_worth", "equity_value", "retablity_month", "pvp", "price", "percentage" ],
+            "binds": ["id", "fiiId", "dailyLiquidity", "lastYield", "dividendYield", "neWorth", "equityValue", "retablityMonth", "pVp", "price", "percentage"]
+        },
+        {
+            "tableName": "basic_information",
+            "fields": ["id", "fii_id", "company_name", "fund_construction_date", "quota_issued", "initial_equity", "initial_quota_value", "type_management", "rate_performance", "rate_management", "cnpj", "public_something", "mandate", "followup", "durataion", "rate_administration", "rate_of_management", "rate_consulting"],
+            "binds": ["id", "fiiId", "companyName", "fundConstructionDate", "quatoIssued", "initialEquity", "initialQuotaValue", "typeManagement", "ratePerformance", "rateManagement", "cnpj", "publicSomething", "mandate", "followUp", "duration", "rateAdministration", "rateOfManagement", "rateConsulting"]
+        },
+        {
+            "tableName": "dividends",
+            "fields": ["id", "fii_id", "earnings", "last_month", "three_months", "six_months", "twelve_months", "since_ipo" ],
+            "binds": ["id", "fiiId", "earning", "last", "threeMonths",  "sixMonths",  "twelveMonths",  "sinceIpo"]
+        },
+        {
+            "tableName": "assets_fiis",
+            "fields": ["id", "fii_id", "name", "address", "neighborhood", "city", "gross_leasable_area"],
+            "binds": ["id", "fiiId", "name", "address", "neighborhood", "city", "grossLeasableArea"]
+        },
+        {
+            "tableName": "save_complete_fii",
+            "fields": ["fii_symbol", "table_name", "success_sync"],
+            "binds": ["fiiSymbol", "tableName", "successSync"]
+        }
+    ]
+}
