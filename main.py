@@ -6,10 +6,7 @@
 
 __author__ = "Filipe Rocha"
 __license__ = "GNU General Public License"
-__version__ = "1.0.0"
-__maintainer__ = "Filipe Rocha"
 __email__ = "filipe.fsrocha@gmail.com"
-__status__ = "Prototype"
 
 
 from datasync.datasync import DataSync
